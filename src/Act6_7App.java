@@ -73,7 +73,7 @@ public class Act6_7App {
 		
 	public static double cambioYenes (int número) {
 			
-		final double cambyenes = 0.86;
+		final double cambyenes = 129.852;
 			
 		double yenes = número * cambyenes;
 			
