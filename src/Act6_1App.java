@@ -53,7 +53,7 @@ public class Act6_1App {
 	}
 }
 			
-	
+	// Cálculo de las áreas
 
 	public static double calculoAreaCi (int R) {
 		
