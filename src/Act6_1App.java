@@ -18,7 +18,7 @@ public class Act6_1App {
 				
 				int R = Integer.parseInt(texto_radio);
 				
-				JOptionPane.showMessageDialog(null, "El area del circulo es de: " + calculoAreaCi(R));
+				JOptionPane.showMessageDialog(null, "El area del circulo es de: " + calculoAreaCi (R));
 				
 				break;
 				
