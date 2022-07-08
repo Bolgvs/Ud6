@@ -10,12 +10,19 @@ public class Act6_2App {
 		
 		int nums = Integer.parseInt(texto_nums), M, m, bucle;
 		
+		String texto_M = JOptionPane.showInputDialog("¿Cuál es el número máximo en el intérvalo que quieres generar?");
+		
+		String texto_m = JOptionPane.showInputDialog("¿Cuál es el número mínimo en el intérvalo que quieres generar?");
+		
+		M = Integer.parseInt(texto_M);
+		
+		m = Integer.parseInt(texto_m);
 		
 		// Generamos X numeros randoms
 		
 		for (bucle = 0; bucle < nums; bucle++) {
 			
-			JOptionPane.showMessageDialog(null, "El número" + (bucle+1) + "tiene un valor de: " + aleatorio (M, m));
+			JOptionPane.showMessageDialog(null, "El número" + (bucle+1) + "tiene un valor de: " + aleatorio(M, m));
 			
 		}
 		
@@ -25,15 +32,11 @@ public class Act6_2App {
 		
 		public static int aleatorio (int M , int m) {
 			
-			String texto_M = JOptionPane.showInputDialog("¿Cuál es el número máximo en el intérvalo que quieres generar?");
 			
-			String texto_m = JOptionPane.showInputDialog("¿Cuál es el número mínimo en el intérvalo que quieres generar?");
-			
-			M = Integer.parseInt(texto_M);
-			
-			m = Integer.parseInt(texto_m);
 			
 			double random = (Math.random() * (M - m - 1) + (m)) + 1;
+			
+			// Se suma y se resta 1 para que se muestren los extremos
 			
 			return (int) random;
 			
