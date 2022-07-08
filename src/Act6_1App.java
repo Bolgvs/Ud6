@@ -3,28 +3,10 @@ import javax.swing.JOptionPane;
 public class Act6_1App {
 	
 	public static void main (String [] args) {
-		
-		// Petición día de la semana
-		
-				String figura = JOptionPane.showInputDialog(null, "¿De qué figura quieres calcular el área?");
-				
-				// Condiciones:
-				
-				switch (figura) {
-				
-				case "Circulo":
-					
-					calculoAreaCi
-					
-					break;
-		
-	}
-	
-	public static void (String [] args) {
 	
 			// Petición figura
 	
-			String figura = JOptionPane.showInputDialog(null, "¿De qué figura quieres calcular el área?");
+			String figura = JOptionPane.showInputDialog(null, "¿De qué figura quieres calcular el área? (Triangulo, Cuadrado, Circulo)");
 			
 			// Condiciones:
 			
@@ -32,37 +14,68 @@ public class Act6_1App {
 			
 			case "Circulo":
 				
-				String texto_num = JOptionPane.showInputDialog("¿Cuál es el radio?");
+				String texto_radio = JOptionPane.showInputDialog("¿Cuál es el radio?");
 				
-				double num = Double.parseDouble(texto_num);
+				int R = Integer.parseInt(texto_radio);
 				
-				resultado = calculoAreaCi (num)
+				JOptionPane.showMessageDialog(null, "El area del circulo es de: " + calculoAreaCi(R));
 				
 				break;
 				
+			case "Triangulo":
+				
+				String texto_base = JOptionPane.showInputDialog("¿Cuál es la base?");
+				
+				int base = Integer.parseInt(texto_base);
+				
+				String texto_altura = JOptionPane.showInputDialog("¿Cuál es la altura?");
+				
+				int altura = Integer.parseInt(texto_altura);
+				
+				JOptionPane.showMessageDialog(null, "El area del triangulo es de: " + calculoAreaT (base, altura));
+				
+				break;
+				
+			case "Cuadrado":
+				
+				String texto_lado = JOptionPane.showInputDialog("¿Cuál es el lado?");
+				
+				int lado = Integer.parseInt(texto_lado);
+				
+				JOptionPane.showMessageDialog(null, "El area del cuadrado es de: " + calculoAreaCu (lado));
+				
+				break;
+				
+			default:
+				
+				JOptionPane.showMessageDialog(null, "Elección incorrecta");
+				
+	}
 }
+			
 	
+
 	public static double calculoAreaCi (int R) {
 		
-		double resultado = Math.pow(R, 2) * Math.PI;
+		double area = Math.pow(R, 2) * Math.PI;
 		
-		System.out.println("El area del circulo es de: " + resultado);
-		
-	}
-	
-	public static void calculoAreaT (double base, double altura) {
-		
-		double resultado = (base*altura)/2;
-		
-		System.out.println("El area del triangulo es de: " + resultado);
+		return area;
 		
 	}
 	
-	public static void calculoAreaCu (double lado) {
+	public static double calculoAreaT (int base, int altura) {
 		
-		double resultado = Math.pow(lado, 2);
+		double area = (base*altura)/2;
 		
-		System.out.println("El area del cuadrado es de: " + resultado);
+		return area;
+		
+	}
+	
+	public static double calculoAreaCu (int lado) {
+		
+		double area = Math.pow(lado, 2);
+		
+		return area;
 		
 		
 	}
