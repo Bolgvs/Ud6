@@ -14,15 +14,17 @@ public class Act6_4App {
 		
 	}
 	
-	public static int Factorial (int número) {
+	public static int Factorial (int número) { 
 		
-		for (int bucle = 0; bucle < número; bucle++) {
+		int factorial = número;
+		
+		for (int bucle = número -1; bucle != 0; bucle--) {
 			
-			int resultado = número * (número - 1);
+			factorial *= bucle;
 			
 		}
 		
-		return resultado;
+		return factorial;
 		
 	}
 

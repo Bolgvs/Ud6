@@ -18,9 +18,9 @@ public class Act6_6App {
 		
 		// Limito a 20 cifras
 			
-		while (número > 20) {
+		while (número > 10) {
 				
-			número /= 20;
+			número /= 10;
 				
 			cifras++;
 				
