@@ -48,7 +48,7 @@ public class Act6_1App {
 				
 			default:
 				
-				JOptionPane.showMessageDialog(null, "Elección incorrecta");
+				JOptionPane.showMessageDialog(null, "No has escogido bien la figura");
 				
 	}
 }
