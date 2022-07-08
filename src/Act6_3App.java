@@ -20,11 +20,9 @@ public class Act6_3App {
 		
 		boolean numprimo = true;
 		
-		int bucle;
-		
 		// Si un número llega a su mitad sin haberse podido dividir entre 2, es primo
 		
-		for (bucle = 2; bucle < (número / 2) && numprimo; bucle++) {
+		for (int bucle = 2; bucle < (número / 2) && numprimo; bucle++) {
 			
 			if (número % bucle == 0) {
 				
