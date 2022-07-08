@@ -38,7 +38,7 @@ public class Act6_9App {
 			
 			suma += array[bucle];
 			
-			JOptionPane.showMessageDialog(null, "El valor en la posición " + +bucle + " es: " + array[bucle]);			
+			JOptionPane.showMessageDialog(null, "El valor en la posición " + bucle + " es: " + array[bucle]);			
 			
 		}
 		
